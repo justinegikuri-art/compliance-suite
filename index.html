@@ -155,39 +155,24 @@
   </section>
 <section id="contact-form">
   <h2>Contact & Request a Quote</h2>
-  <form name="contact" method="POST" data-netlify="true">
-    <!-- Hidden input required by Netlify -->
-    <input type="hidden" name="form-name" value="contact">
+<form name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact">
 
-    <label>Your Name</label>
-    <input type="text" name="name" required>
+  <label for="name">Your Name</label>
+  <input type="text" id="name" name="name" required>
 
-    <label>Your Email</label>
-    <input type="email" name="email" required>
+  <label for="email">Your Email</label>
+  <input type="email" id="email" name="email" required>
 
-    <label>Phone / WhatsApp</label>
-    <input type="text" name="phone" required>
+  <label for="service">Choose Service</label>
+  <select id="service" name="service">
+    <option value="tax-filing">Tax Filing</option>
+    <option value="payroll">Payroll</option>
+    <option value="statutory">Statutory Compliance</option>
+  </select>
 
-    <label>Choose Service</label>
-    <select name="service">
-      <option>Tax Filing</option>
-      <option>Payroll</option>
-      <option>Business Registration</option>
-      <option>Grant Writing</option>
-      <option>Business Plans & Pitch Decks</option>
-      <option>Rental Income Filing</option>
-      <option>Account Management</option>
-      <option>Other</option>
-    </select>
+  <label for="message">Message</label>
+  <textarea id="message" name="message" required></textarea>
 
-    <label>How can we help?</label>
-    <textarea name="message" rows="5"></textarea>
-
-    <button type="submit">Send Message</button>
-  </form>
-
-  <p style="text-align:center; margin-top:20px;">
-    Or chat directly on WhatsApp: 
-    <a href="https://wa.me/254795011489" target="_blank">+254 795 011 489</a>
-  </p>
-</section>
+  <button type="submit">Send Message</button>
+</form>
