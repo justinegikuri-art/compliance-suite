@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compliance Hub Kenya — Simplifying Compliance, Empowering Business</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Compliance Hub Kenya helps individuals, SMEs, and organizations with KRA filings, payroll, statutory compliance, business registration, and more. Affordable, reliable support services.">
+  <meta name="keywords" content="Compliance, KRA, Tax Filing, Payroll, Business Registration, Kenya, SMEs, Landlords, Statutory Compliance">
+  <meta name="author" content="Compliance Hub Kenya">
+
+  <!-- Social Sharing -->
+  <meta property="og:title" content="Compliance Hub Kenya — Simplifying Compliance, Empowering Business">
+  <meta property="og:description" content="Trusted partner for KRA filings, payroll, business registration, and more. Reliable support services in Kenya.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.compliancehubkenya.com/logo.png">
+
+  <link rel="icon" href="https://www.compliancehubkenya.com/favicon.ico" type="image/x-icon">
+
+  <!-- Styles -->
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      margin: 0; padding: 0;
+      background-color: #e0f0ff;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    a { text-decoration: none; }
+    header {
+      position: sticky; top: 0; z-index: 1000;
+      display: flex; justify-content: space-between; align-items: center;
+      background-color: #cce6ff; padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+    }
+    .logo { font-size: 1.5rem; font-weight: bold; color: #ff6600; }
+    nav { display: flex; gap: 20px; flex-wrap: wrap; }
+    nav a { color: #ff6600; font-weight: bold; transition: 0.3s; }
+    nav a:hover { color: #e65c00; }
+    section { padding: 60px 20px; }
+    .hero h1 { font-size: 3rem; color: #ff6600; text-align: center; text-shadow: 1px 1px 2px rgba(0,0,0,0.1); margin-bottom: 20px; }
+    .hero p { font-size: 1.2rem; text-align: center; max-width: 700px; margin: 0 auto 30px auto; }
+    .hero .buttons { text-align: center; margin-bottom: 50px; }
+    .btn {
+      padding: 15px 30px; font-size: 1rem;
+      border: none; border-radius: 5px; cursor: pointer;
+      margin: 5px; display: inline-block;
+      transition: all 0.3s ease; font-family: "Times New Roman", Times, serif;
+    }
+    .btn-blue { background-color: #1d4ed8; color: white; }
+    .btn-blue:hover { background-color: #1741b0; transform: translateY(-2px); }
+    .btn-yellow { background-color: #ffc107; color: #333; }
+    .btn-yellow:hover { background-color: #e6ac00; transform: translateY(-2px); }
+    .btn-orange { background-color: #ff6600; color: white; }
+    .btn-orange:hover { background-color: #e65c00; transform: translateY(-2px); }
+
+    .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1000px; margin: 0 auto; }
+    .card { background: white; border-radius: 10px; padding: 20px; flex: 1 1 300px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); }
+    .service-card { border-left: 5px solid #ff6600; }
+    .pricing-card { border-top: 5px solid #ffc107; text-align: center; }
+
+    h2 { font-size: 2rem; color: #ffc107; text-align: center; margin-bottom: 40px; }
+    h3 { font-size: 1.5rem; color: #ff6600; margin-bottom: 15px; }
+
+    form {
+      max-width: 600px; margin: 0 auto;
+      display: flex; flex-direction: column; gap: 15px;
+      background-color: #ffffff; padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+      border-top: 5px solid #ffc107;
+    }
+    input, select, textarea {
+      padding: 10px; font-size: 1rem;
+      border: 1px solid #ccc; border-radius: 5px; width: 100%;
+      transition: border-color 0.3s ease;
+    }
+    input:focus, select:focus, textarea:focus { border-color: #ff6600; outline: none; }
+    button[type="submit"] {
+      background-color: #ff6600; color: white; font-weight: bold;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    button[type="submit"]:hover { background-color: #e65c00; transform: translateY(-2px); }
+
+    #form-success {
+      display: none;
+      text-align: center;
+      color: green;
+      font-weight: bold;
+      margin-top: 20px;
+      background-color: #d4edda;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center; padding: 30px 20px;
+      background-color: #cce6ff; font-size: 0.9rem; color: #333;
+    }
+    footer a { color: #ff6600; text-decoration: none; transition: 0.3s; }
+    footer a:hover { color: #e65c00; }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.6rem; }
+      h3 { font-size: 1.2rem; }
+      p { font-size: 1rem; }
+      nav { gap: 10px; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Compliance Hub Kenya</div>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact-form">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <h1>Stay Compliant. Stay Confident.</h1>
+    <p>Kenya’s trusted partner for <strong>KRA filings, payroll, and business documentation</strong>. Let us handle your compliance so you can focus on growing your business.</p>
+    <div class="buttons">
+      <a href="#contact-form" class="btn btn-blue">Request a Quote</a>
+      <a href="https://wa.me/254795011489?text=Hi%20Compliance%20Hub%2C%20I%27d%20like%20to%20get%20help%20with%20my%20KRA%20compliance." target="_blank" class="btn btn-yellow">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="services" style="background-color:#e0f0ff;">
+    <h2>Our Services</h2>
+    <div class="container">
+      <div class="card service-card"><h3>Business Tax Filing & Returns</h3><p>VAT, income tax, and KRA filings for individuals and businesses, done efficiently and accurately.</p></div>
+      <div class="card service-card"><h3>Payroll Processing</h3><p>Full payroll, payslips, PAYE submissions, and statutory deductions handled seamlessly.</p></div>
+      <div class="card service-card"><h3>Statutory Compliance</h3><p>NSSF, NHIF, NITA, and Housing Levy filings with guidance to keep your business compliant.</p></div>
+      <div class="card service-card"><h3>Business Registration</h3><p>Step-by-step support with company, business, or NGO registration documentation.</p></div>
+      <div class="card service-card"><h3>Grant Writing & Proposals</h3><p>Donor-ready proposals and tailored funding strategies for organizations and NGOs.</p></div>
+      <div class="card service-card"><h3>Business Plans & Pitch Decks</h3><p>Investor-ready business plans, financial projections, and concise pitch decks.</p></div>
+      <div class="card service-card"><h3>Rental Income Filing</h3><p>Monthly rental income returns and tenant withholding support for landlords.</p></div>
+      <div class="card service-card"><h3>Account Management</h3><p>Compliance calendars, secure document storage, and personalized month-to-month support.</p></div>
+    </div>
+  </section>
+
+  <section id="pricing" style="background-color:#cce6ff;">
+    <h2>Pricing</h2>
+    <div class="container">
+      <div class="card pricing-card"><h3>Starter Plan</h3><p style="font-weight:bold; font-size:1.2rem;">KSh 2,000 / month</p><p>Monthly filing guidance, reminders, and WhatsApp support for individuals & micro businesses.</p><a href="#contact-form" class="btn btn-blue">Get Started</a></div>
+      <div class="card pricing-card"><h3>Business Plan</h3><p style="font-weight:bold; font-size:1.2rem;">KSh 3,000 / month</p><p>Payroll, VAT, PAYE, and statutory filing support for SMEs with up to 20 employees.</p><a href="#contact-form" class="btn btn-blue">Get Started</a></div>
+      <div class="card pricing-card"><h3>Custom Plan</h3><p style="font-weight:bold; font-size:1.2rem;">Custom Pricing</p><p>Tailored solutions for NGOs, SACCOs, and large clients with dedicated manager & proposal support.</p><a href="#contact-form" class="btn btn-blue">Get Started</a></div>
+    </div>
+  </section>
+
+  <!-- ✅ Updated Contact Form -->
+  <section id="contact-form">
+    <h2>Contact & Request a Quote</h2>
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="contact">
+      <input type="hidden" name="form-name" value="contact">
+      <p style="display:none;"><label>Don’t fill this out: <input name="bot-field"></label></p>
+      <label>Your Name</label>
+      <input type="text" name="name" required>
+      <label>Your Email</label>
+      <input type="email" name="email" required>
+      <label>Phone / WhatsApp</label>
+      <input type="text" name="phone" required>
+      <label>Choose Service</label>
+      <select name="service">
+        <option>Tax Filing</option>
+        <option>Payroll</option>
+        <option>Business Registration</option>
+        <option>Grant Writing</option>
+        <option>Business Plans & Pitch Decks</option>
+        <option>Rental Income Filing</option>
+        <option>Account Management</option>
+        <option>Other</option>
+      </select>
+      <label>How can we help?</label>
+      <textarea name="message" rows="5"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="form-success">✅ Thank you! Your message has been sent successfully.</div>
+    <p style="text-align:center; margin-top:20px;">Or chat directly on WhatsApp: 
+      <a href="https://wa.me/254795011489" target="_blank">+254 795 011 489</a></p>
+  </section>
+
+  <footer>
+    © 2025 Compliance Hub Kenya — Simplifying Compliance, Empowering Business<br>
+    📧 <a href="mailto:compliancehubkenya098@gmail.com">compliancehubkenya098@gmail.com</a> • 📞 +254 795 011 489 • Nairobi, Kenya
+  </footer>
+
+  <!-- ✅ Add this JS for instant submission feedback -->
+  <script>
+  const form = document.getElementById("contact");
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(() => {
+      document.getElementById("form-success").style.display = "block";
+      form.reset();
+    })
+    .catch((error) => alert("❌ There was an error submitting the form: " + error));
+  });
+  </script>
+</body>
+</html>

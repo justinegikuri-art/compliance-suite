@@ -1,0 +1,30 @@
+  <!-- Trusted Compliance Partners Section -->
+  <section id="partners" style="background-color:#e0f0ff; padding:60px 20px;">
+    <h2>Our Trusted Compliance Partners</h2>
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:30px; max-width:1000px; margin:0 auto;">
+
+      <div style="background:white; padding:15px 25px; border-radius:10px; box-shadow:0px 3px 6px rgba(0,0,0,0.1);">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Kenya_Revenue_Authority_logo.png" alt="KRA Logo" style="height:70px;">
+      </div>
+
+      <div style="background:white; padding:15px 25px; border-radius:10px; box-shadow:0px 3px 6px rgba(0,0,0,0.1);">
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/e7/NSSF_Kenya_logo.png" alt="NSSF Logo" style="height:70px;">
+      </div>
+
+      <div style="background:white; padding:15px 25px; border-radius:10px; box-shadow:0px 3px 6px rgba(0,0,0,0.1);">
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/88/NHIF_Kenya_logo.png" alt="NHIF Logo" style="height:70px;">
+      </div>
+
+      <div style="background:white; padding:15px 25px; border-radius:10px; box-shadow:0px 3px 6px rgba(0,0,0,0.1);">
+        <img src="https://www.nita.go.ke/images/logo.png" alt="NITA Logo" style="height:70px;">
+      </div>
+
+      <div style="background:white; padding:15px 25px; border-radius:10px; box-shadow:0px 3px 6px rgba(0,0,0,0.1);">
+        <img src="https://housingandurban.go.ke/wp-content/uploads/2024/01/state-department-for-housing-logo.png" alt="Housing Levy Logo" style="height:70px;">
+      </div>
+
+      <div style="background:white; padding:15px 25px; border-radius:10px; box-shadow:0px 3px 6px rgba(0,0,0,0.1);">
+        <img src="images/compliancehub-logo.png" alt="Compliance Hub Kenya Logo" style="height:70px;">
+      </div>
+    </div>
+  </section>
