@@ -153,26 +153,9 @@
       <div class="card pricing-card"><h3>Custom Plan</h3><p style="font-weight:bold; font-size:1.2rem;">Custom Pricing</p><p>Tailored solutions for NGOs, SACCOs, and large clients with dedicated manager & proposal support.</p><a href="#contact-form" class="btn btn-blue">Get Started</a></div>
     </div>
   </section>
-<section id="contact-form">
-  <h2>Contact & Request a Quote</h2>
 <form name="contact" method="POST" data-netlify="true">
-  <input type="hidden" name="form-name" value="contact">
-
-  <label for="name">Your Name</label>
-  <input type="text" id="name" name="name" required>
-
-  <label for="email">Your Email</label>
-  <input type="email" id="email" name="email" required>
-
-  <label for="service">Choose Service</label>
-  <select id="service" name="service">
-    <option value="tax-filing">Tax Filing</option>
-    <option value="payroll">Payroll</option>
-    <option value="statutory">Statutory Compliance</option>
-  </select>
-
-  <label for="message">Message</label>
-  <textarea id="message" name="message" required></textarea>
-
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="How can we help?" required></textarea>
   <button type="submit">Send Message</button>
 </form>
