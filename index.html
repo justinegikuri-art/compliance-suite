@@ -153,61 +153,41 @@
       <div class="card pricing-card"><h3>Custom Plan</h3><p style="font-weight:bold; font-size:1.2rem;">Custom Pricing</p><p>Tailored solutions for NGOs, SACCOs, and large clients with dedicated manager & proposal support.</p><a href="#contact-form" class="btn btn-blue">Get Started</a></div>
     </div>
   </section>
+<section id="contact-form">
+  <h2>Contact & Request a Quote</h2>
+  <form name="contact" method="POST" data-netlify="true">
+    <!-- Hidden input required by Netlify -->
+    <input type="hidden" name="form-name" value="contact">
 
-  <!-- ✅ Updated Contact Form -->
-  <section id="contact-form">
-    <h2>Contact & Request a Quote</h2>
-    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="contact">
-      <input type="hidden" name="form-name" value="contact">
-      <p style="display:none;"><label>Don’t fill this out: <input name="bot-field"></label></p>
-      <label>Your Name</label>
-      <input type="text" name="name" required>
-      <label>Your Email</label>
-      <input type="email" name="email" required>
-      <label>Phone / WhatsApp</label>
-      <input type="text" name="phone" required>
-      <label>Choose Service</label>
-      <select name="service">
-        <option>Tax Filing</option>
-        <option>Payroll</option>
-        <option>Business Registration</option>
-        <option>Grant Writing</option>
-        <option>Business Plans & Pitch Decks</option>
-        <option>Rental Income Filing</option>
-        <option>Account Management</option>
-        <option>Other</option>
-      </select>
-      <label>How can we help?</label>
-      <textarea name="message" rows="5"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <div id="form-success">✅ Thank you! Your message has been sent successfully.</div>
-    <p style="text-align:center; margin-top:20px;">Or chat directly on WhatsApp: 
-      <a href="https://wa.me/254795011489" target="_blank">+254 795 011 489</a></p>
-  </section>
+    <label>Your Name</label>
+    <input type="text" name="name" required>
 
-  <footer>
-    © 2025 Compliance Hub Kenya — Simplifying Compliance, Empowering Business<br>
-    📧 <a href="mailto:compliancehubkenya098@gmail.com">compliancehubkenya098@gmail.com</a> • 📞 +254 795 011 489 • Nairobi, Kenya
-  </footer>
+    <label>Your Email</label>
+    <input type="email" name="email" required>
 
-  <!-- ✅ Add this JS for instant submission feedback -->
-  <script>
-  const form = document.getElementById("contact");
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-    const formData = new FormData(form);
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString()
-    })
-    .then(() => {
-      document.getElementById("form-success").style.display = "block";
-      form.reset();
-    })
-    .catch((error) => alert("❌ There was an error submitting the form: " + error));
-  });
-  </script>
-</body>
-</html>
+    <label>Phone / WhatsApp</label>
+    <input type="text" name="phone" required>
+
+    <label>Choose Service</label>
+    <select name="service">
+      <option>Tax Filing</option>
+      <option>Payroll</option>
+      <option>Business Registration</option>
+      <option>Grant Writing</option>
+      <option>Business Plans & Pitch Decks</option>
+      <option>Rental Income Filing</option>
+      <option>Account Management</option>
+      <option>Other</option>
+    </select>
+
+    <label>How can we help?</label>
+    <textarea name="message" rows="5"></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p style="text-align:center; margin-top:20px;">
+    Or chat directly on WhatsApp: 
+    <a href="https://wa.me/254795011489" target="_blank">+254 795 011 489</a>
+  </p>
+</section>
