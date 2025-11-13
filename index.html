@@ -140,35 +140,81 @@
       <div class="card pricing-card"><h3>Custom Plan</h3><p style="font-weight:bold; font-size:1.2rem;">Custom Pricing</p><p>Tailored solutions for NGOs, SACCOs, and large clients with dedicated manager & proposal support.</p><a href="#contact-form" class="btn btn-blue">Get Started</a></div>
     </div>
   </section>
-<section id="contact" class="contact-section">
-  <h2>Contact & Request a Quote</h2>
-  <form name="contact" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact">
-    <label>Your Name</label>
-    <input type="text" name="name" required>
-    <label>Your Email</label>
-    <input type="email" name="email" required>
-    <label>Phone / WhatsApp</label>
-    <input type="text" name="phone" required>
-    <label>Choose Service</label>
-    <select name="service" required>
-      <option value="">-- Select Service --</option>
-      <option>Tax Filing</option>
-      <option>Payroll</option>
-      <option>Business Registration</option>
-      <option>Grant Writing</option>
-      <option>Business Plans & Pitch Decks</option>
-      <option>Rental Income Filing</option>
-      <option>Account Management</option>
-      <option>Other</option>
-    </select>
-    <label>How can we help?</label>
-    <textarea name="message" rows="5" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-  <p>✅ Thank you! Your message has been sent successfully.</p>
+<!-- Contact Form -->
+<form name="contact" method="POST" data-netlify="true">
+  <label for="name">Your Name</label>
+  <input type="text" name="name" id="name" required>
+  <label for="email">Your Email</label>
+  <input type="email" name="email" id="email" required>
+  <label>Choose Service</label>
+  <select name="service" required>
+    <option>Tax Filing</option>
+    <option>Payroll</option>
+    <option>Business Registration</option>
+    <option>Grant Writing</option>
+    <option>Business Plans & Pitch Decks</option>
+    <option>Rental Income Filing</option>
+    <option>Account Management</option>
+    <option>Other</option>
+  </select>
+  <label for="message">How can we help?</label>
+  <textarea name="message" id="message" required></textarea>
+  <button type="submit">Send Message</button>
+  <!-- Success message -->
+  <p id="success-message" style="display:none; 
+      color: #ffffff; 
+      background: #007BFF; 
+      padding: 12px 15px; 
+      border-radius: 6px; 
+      margin-top: 10px; 
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
+    🎉 Perfect! Thanks for reaching out. Our Compliance Hub Kenya team will contact you shortly. 
+    <a href="#blog-tips" style="color: #ffeb3b; text-decoration: underline;">Check out our compliance tips!</a>
+  </p>
+</form>
+<!-- Netlify form handling script -->
+<script>
+  const form = document.querySelector("form[name='contact']");
+  const successMessage = document.getElementById("success-message");
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default submission
+    const formData = new FormData(form);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(() => {
+      // Show success message
+      successMessage.style.display = "block";
+      successMessage.style.opacity = 0;
+      successMessage.style.transform = "translateY(-10px)";
+      setTimeout(() => {
+        successMessage.style.transition = "all 0.5s ease";
+        successMessage.style.opacity = 1;
+        successMessage.style.transform = "translateY(0)";
+      }, 10);
+      // Auto-hide after 5 seconds
+      setTimeout(() => {
+        successMessage.style.transition = "all 0.5s ease";
+        successMessage.style.opacity = 0;
+        successMessage.style.transform = "translateY(-10px)";
+        setTimeout(() => {
+          successMessage.style.display = "none";
+        }, 500);
+      }, 5000);
+      // Clear form fields
+      form.reset();
+    })
+    .catch((error) => {
+      alert("Oops! Something went wrong. Please try again.");
+      console.error(error);
+    });
+  });
+</script>
 </section>
-
 <!-- Footer -->
 <footer>
   © 2025 <strong>Compliance Hub Kenya</strong> — Simplifying Compliance, Empowering Business<br>
